@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GART GAME</title>
+
+  <link rel="stylesheet" href="stylesheet.css" />
+
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+ background: linear-gradient(135deg, #a3c293, #d9cbb1);
+
+  color: white; /* белый цвет текста */
+  font-family: 'CutOutsFLF', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* тень текста */
+}
+
+
+    h1 {
+      font-size: 5em;
+      margin: 40px 0 20px 0;
+      letter-spacing: 8px;
+    }
+
+    .store-wrapper {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .store {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      text-decoration: none;
+      color: #3a3a2e;
+      max-width: 160px;
+    }
+
+	.store img {
+	  width: 200px;
+	  height: 200px;
+	  border-radius: 0; /* убрать скругление, чтобы тень была по форме */
+	  background: none;
+	  padding: 0; /* убрать padding, чтобы тень не "размазывалась" */
+	  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+	  transition: transform 0.2s ease;
+	  object-fit: contain;
+	}
+
+    .store:hover img {
+      transform: scale(1.1);
+    }
+
+    .store-name {
+      margin-top: 12px;
+      font-size: 1.3em;
+      font-weight: 600;
+      user-select: none;
+      color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 3em;
+      }
+
+      .store {
+        max-width: 120px;
+      }
+
+      .store img {
+        width: 100px;
+        height: 100px;
+        padding: 15px;
+      }
+
+      .store-name {
+		  margin-top: 20px; /* увеличенный отступ */
+		  font-size: 1.3em;
+		  font-weight: 600;
+		  user-select: none;
+		  color: #3a3a2e;
+		}
+	  
+	  
+
+    }
+  </style>
+</head>
+<body>
+  <h1>GART GAME</h1>
+
+  <div class="store-wrapper">
+    <a href="https://play.google.com/store/apps/details?id=com.GartGame.WordsStorm" target="_blank" rel="noopener noreferrer" class="store">
+  <img src="words_ico.png" alt="App Icon" />
+  <div class="store-name">Words Storm</div>
+</a>
+  </div>
+</body>
+</html>
